@@ -27,7 +27,7 @@ def run_eval(model_path, episodes=5, render_fps=240):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="logs/model_latest.zip", help="Path to trained model .zip")
+    parser.add_argument("--model", type=str, default="logs/models/ppo_quadrotor_final.zip", help="Path to trained model .zip")
     parser.add_argument("--episodes", type=int, default=3)
     args = parser.parse_args()
     if not os.path.exists(args.model):
